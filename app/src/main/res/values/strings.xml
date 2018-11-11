@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyBus</string>
+    <string name="n_mero_da_linha_de_nibus">Número da linha de ônibus</string>
+    <string name="selecione_a_op_o_desejada_n_e_preencha_o_campo_pesquisar">Selecione a opção desejada  e preencha o campo pesquisar.</string>
+    <string name="nome_da_linha_de_nibus">Nome da linha de ônibus</string>
+    <string name="itiner_rio_nome_ou_parte_nda_rua_avenida">Itinerário - nome (ou parte)  da rua, avenida...</string>
+    <string name="buscar">Buscar</string>
+    <string name="linha">Linha</string>
+    <string name="nome">NOME</string>
+    <string name="horario">HORARIO</string>
+</resources>
