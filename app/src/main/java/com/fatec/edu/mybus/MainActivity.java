@@ -79,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         initiList();
-   //     initiListFiltrada();
         l1.setVisibility(View.GONE);
         btn1  = (Button)findViewById(R.id.button1) ;
 
@@ -91,10 +90,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(MainActivity.this, SegundoActivity.class);
-                //intent.putExtra("Itinerario",arrayList.get(i).nomeDaRua+arrayList.get(i).numeroLinhas);
-
-              //  Bundle bundle = new Bundle();
-             //   bundle.putSerializable("selecionado",arrayList.get(i));
                 intent.putExtra("selecionado",arrayList.get(i));
                 startActivity(intent);
             }
@@ -135,7 +130,6 @@ public class MainActivity extends AppCompatActivity {
         String maiuscula = textTosearch.toUpperCase() ;
         for(Iterator<Itinerario> iterator = arrayList.iterator();iterator.hasNext();) {
             Itinerario onibu = iterator.next();
- //           String teste = onibu.getSentido();
 
 
 
@@ -154,13 +148,10 @@ public class MainActivity extends AppCompatActivity {
     public void initiList(){   //inicia arrays, e adapter
         arrayList = new ArrayList<>();
         lerDataBase();
-
- //       arrayList = new ArrayList<Itinerario>();
         adapter = new ListaAdapterItinerario(this,arrayList);
         l1.setAdapter(adapter);
 
     }
-
 
 
 
@@ -179,8 +170,7 @@ public class MainActivity extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 l1.setVisibility(View.VISIBLE);
 
-                //  MainActivity.this.adapter.getFilter().filter(tx);
-//
+
                 if (s.toString().equals("")) {
                     initiList();
                 }
@@ -274,10 +264,6 @@ public  void  lerDataBase(){
 
 public void showData(DataSnapshot dataSnapshot){
     for(DataSnapshot ds: dataSnapshot.getChildren()){
-      //  Itinerario onibu = new Itinerario();
-   //     onibu.setNomeDaRua(ds.child(linhaData).getValue(Itinerario.class).getNumeroLinhas());
-   //     onibu.setNomeDaRua(ds.child(nomeData).getValue(Itinerario.class).getNumeroLinhas());
-   //     onibu.setNomeDaRua(ds.child(sentidoData).getValue(Itinerario.class).getNumeroLinhas());
        Itinerario onibu = ds.getValue(Itinerario.class);
         arrayList.add(onibu);
     }

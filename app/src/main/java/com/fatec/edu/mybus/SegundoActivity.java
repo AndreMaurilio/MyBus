@@ -40,7 +40,6 @@ public class SegundoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_descricao);
         Bundle bundle = getIntent().getExtras();
-      // resultado = "Itinerario"+bundle.getString("Itinerario");
         itinerario = (Itinerario) bundle.getSerializable("selecionado");
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar2);
@@ -57,16 +56,14 @@ public class SegundoActivity extends AppCompatActivity {
 //        if(bundle !=null){
 
             mToolbar.setTitle(getResources().getString(R.string.app_name));
-          //  mToolbar.setTitle(bundle.getString("Itinerario"));
             t2.setText("LINHA: "+itinerario.getNumeroLinhas());
             t3.setText("SENTIDO: "+itinerario.getSentido());
             t4.setText("ITINERÁRIO: "+itinerario.getRuas());
             t5.setText("SEGUNDA A SEXTA: "+itinerario.getHorarioSemanal());
             t6.setText("SABÁDOS: "+itinerario.getHorarioSabado());
             t7.setText("DOMINGOS E FERIADOS: "+itinerario.getHorarioDomingoFeriado());
-          //  l2.setFilterText(bundle.getString("Itinerario"));
 
- //       }
+
 
 
 

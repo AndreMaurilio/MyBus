@@ -45,7 +45,6 @@ public class TerceiraActivity extends AppCompatActivity {
         arrayList2 = (ArrayList<Itinerario>) bundleObject.getSerializable("filtrado");
 
         initiListFiltrada();
-    //    searchItemFiltrado(palavra);
         l2.setAdapter(adapter2);
 
 
@@ -58,10 +57,6 @@ public class TerceiraActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(TerceiraActivity.this, SegundoActivity.class);
-                //intent.putExtra("Itinerario",arrayList.get(i).nomeDaRua+arrayList.get(i).numeroLinhas);
-
-                //  Bundle bundle = new Bundle();
-                //   bundle.putSerializable("selecionado",arrayList.get(i));
                 intent.putExtra("selecionado",arrayList2.get(i));
                 startActivity(intent);
             }

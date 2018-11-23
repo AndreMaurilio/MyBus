@@ -23,7 +23,6 @@ public class ListaAdapterColunas extends ArrayAdapter<Itinerario>{
         super(contexto,0,lista);
         this.contexto = contexto;
         this.lista = lista;
-     //   this.mResource =resource;
 
 
 
