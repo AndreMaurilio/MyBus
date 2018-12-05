@@ -3,4 +3,4 @@
 
 ![Imagem do Aplicativo](https://github.com/AndreMaurilio/MyBus/blob/master/mybus.png)
 
-#Tela 1: Buscador, procura pelo nome do itinerário ou por numero da linha. Com função autocompletar.
+Tela 1: Buscador, procura pelo nome do itinerário ou por numero da linha. Com função autocompletar.
