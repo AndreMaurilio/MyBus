@@ -6,14 +6,17 @@
 Tela 1: Tela inicial do MyBus.
 
 
+
 ![Imagem do Aplicativo](https://github.com/AndreMaurilio/MyBus/blob/master/mybus%20t1.jpg?raw=true)
 
 Tela 1: Buscador, procura pelo nome do itinerário ou por numero da linha. Com função autocompletar.
 
 
+
 ![Imagem do Aplicativo](https://github.com/AndreMaurilio/MyBus/blob/master/mybus%20t2.jpg?raw=true)
 
 Tela 2: Quando clicado em buscar, retorna uma lista de itinerários que atendam os valores inseridos.
+
 
 
 ![Imagem do Aplicativo](https://github.com/AndreMaurilio/MyBus/blob/master/mybus%20t3.jpg?raw=true)
